@@ -10,9 +10,7 @@ import UIKit
 class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView1: UITableView!
-    
     let systemIcons = ["archivebox","trash","tray","folder","doc"]
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
