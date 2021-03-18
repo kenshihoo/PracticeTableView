@@ -11,12 +11,15 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     
     @IBOutlet weak var tableView1: UITableView!
     let systemIcons = ["archivebox","trash","tray","folder","doc"]
+    var animals: [Animal] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView1.dataSource = self
         tableView1.delegate = self
+        
+        loadData()
     }
     
     //セクション内の行数を返す
@@ -24,7 +27,7 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         return systemIcons.count
     }
     
-//indexPath の位置に挿入する UITableViewCell を返す
+    //indexPath の位置に挿入する UITableViewCell を返す
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView1.dequeueReusableCell(withIdentifier: "tableViewCell1", for: indexPath)
             
@@ -34,6 +37,15 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
             return cell
     }
 
-
+    func loadData() {
+       animals.append(Animal(nameJP: "ふくろう", nameEN: "Owl", imageName: "owl"))
+       animals.append(Animal(nameJP: "とり", nameEN: "Bird", imageName: "bird"))
+       animals.append(Animal(nameJP: "らいおん", nameEN: "Lion", imageName: "lion"))
+       animals.append(Animal(nameJP: "かば", nameEN: "Hippo", imageName: "hippo"))
+       animals.append(Animal(nameJP: "くま", nameEN: "Bear", imageName: "bear"))
+       animals.append(Animal(nameJP: "はりねずみ", nameEN: "Hedgehog", imageName: "hedgehog"))
+       animals.append(Animal(nameJP: "ぞう", nameEN: "Elephant", imageName: "elephant"))
+    }
+    
 }
 
