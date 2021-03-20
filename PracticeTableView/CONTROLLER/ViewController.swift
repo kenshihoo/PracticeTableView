@@ -24,7 +24,7 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     
     //セクション内の行数を返す
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return systemIcons.count
+        return animals.count
     }
     
     //indexPath の位置に挿入する UITableViewCell を返す

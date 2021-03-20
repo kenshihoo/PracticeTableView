@@ -14,6 +14,7 @@
 		E3B6E49C2600FB7E00DF87BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3B6E49B2600FB7E00DF87BA /* Assets.xcassets */; };
 		E3B6E49F2600FB7E00DF87BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3B6E49D2600FB7E00DF87BA /* LaunchScreen.storyboard */; };
 		E3B6E4A92603893400DF87BA /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B6E4A82603893400DF87BA /* Animal.swift */; };
+		E3B6E4AC26039C3C00DF87BA /* AnimalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B6E4AB26039C3C00DF87BA /* AnimalTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		E3B6E49E2600FB7E00DF87BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3B6E4A02600FB7E00DF87BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3B6E4A82603893400DF87BA /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		E3B6E4AB26039C3C00DF87BA /* AnimalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +60,41 @@
 		E3B6E4912600FB7D00DF87BA /* PracticeTableView */ = {
 			isa = PBXGroup;
 			children = (
+				E3B6E4B126039CC100DF87BA /* MODEL */,
+				E3B6E4B026039CAC00DF87BA /* VIEW */,
+				E3B6E4AE26039C4500DF87BA /* CONTROLLER */,
 				E3B6E4922600FB7D00DF87BA /* AppDelegate.swift */,
 				E3B6E4942600FB7D00DF87BA /* SceneDelegate.swift */,
-				E3B6E4962600FB7D00DF87BA /* ViewController.swift */,
-				E3B6E4A82603893400DF87BA /* Animal.swift */,
-				E3B6E4982600FB7D00DF87BA /* Main.storyboard */,
 				E3B6E49B2600FB7E00DF87BA /* Assets.xcassets */,
 				E3B6E49D2600FB7E00DF87BA /* LaunchScreen.storyboard */,
 				E3B6E4A02600FB7E00DF87BA /* Info.plist */,
 			);
 			path = PracticeTableView;
+			sourceTree = "<group>";
+		};
+		E3B6E4AE26039C4500DF87BA /* CONTROLLER */ = {
+			isa = PBXGroup;
+			children = (
+				E3B6E4962600FB7D00DF87BA /* ViewController.swift */,
+				E3B6E4A82603893400DF87BA /* Animal.swift */,
+				E3B6E4AB26039C3C00DF87BA /* AnimalTableViewCell.swift */,
+			);
+			path = CONTROLLER;
+			sourceTree = "<group>";
+		};
+		E3B6E4B026039CAC00DF87BA /* VIEW */ = {
+			isa = PBXGroup;
+			children = (
+				E3B6E4982600FB7D00DF87BA /* Main.storyboard */,
+			);
+			path = VIEW;
+			sourceTree = "<group>";
+		};
+		E3B6E4B126039CC100DF87BA /* MODEL */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MODEL;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +170,7 @@
 				E3B6E4972600FB7D00DF87BA /* ViewController.swift in Sources */,
 				E3B6E4A92603893400DF87BA /* Animal.swift in Sources */,
 				E3B6E4932600FB7D00DF87BA /* AppDelegate.swift in Sources */,
+				E3B6E4AC26039C3C00DF87BA /* AnimalTableViewCell.swift in Sources */,
 				E3B6E4952600FB7D00DF87BA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
