@@ -8,7 +8,12 @@
 import UIKit
 
 class AnimalTableViewCell: UITableViewCell {
-
+    
+    
+    @IBOutlet weak var animalImageView: UIImageView!
+    @IBOutlet weak var animalNameJPLabel: UILabel!
+    @IBOutlet weak var animalNameENLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -25,17 +25,29 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     //セクション内の行数を返す
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return animals.count
+        
     }
     
     //indexPath の位置に挿入する UITableViewCell を返す
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView1.dequeueReusableCell(withIdentifier: "tableViewCell1", for: indexPath)
-            
-            cell.textLabel?.text = systemIcons[indexPath.row]
-            cell.imageView?.image = UIImage(systemName: systemIcons[indexPath.row])
-            
+//        let cell = tableView1.dequeueReusableCell(withIdentifier: "tableViewCell1", for: indexPath)
+//            cell.textLabel?.text = systemIcons[indexPath.row]
+//            cell.imageView?.image = UIImage(systemName: systemIcons[indexPath.row])
+        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "AnimalTableViewCell", for: indexPath) as? AnimalTableViewCell else {
+                    fatalError("Dequeue failed: AnimalTableViewCell.")
+                }
+        
+            cell.animalNameJPLabel.text = animals[indexPath.row].nameJP
+            cell.animalNameENLabel.text = animals[indexPath.row].nameEN
+            cell.animalImageView.image = UIImage(named: animals[indexPath.row].imageName)
+                
             return cell
     }
+    
+    
+    
+    
 
     func loadData() {
        animals.append(Animal(nameJP: "ふくろう", nameEN: "Owl", imageName: "owl"))
