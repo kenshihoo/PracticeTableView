@@ -13,6 +13,13 @@ class AnimalTableViewCell: UITableViewCell {
     @IBOutlet weak var animalImageView: UIImageView!
     @IBOutlet weak var animalNameJPLabel: UILabel!
     @IBOutlet weak var animalNameENLabel: UILabel!
+     
+    private var animal: Animal? = nil {
+        didSet {
+            self.animalNameJPLabel.text = self.animal?.nameJP
+            self.animalNameENLabel.text = self.animal?.nameEN
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,6 +30,10 @@ class AnimalTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+
+    func apply(animal: Animal) {
+        self.animal = animal
     }
 
 }
