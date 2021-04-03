@@ -15,18 +15,20 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         tableView1.dataSource = self
         tableView1.delegate = self
         
         loadData()
     }
     
-    //セクション内の行数を返す
+    
+    //セクション内の行数を返す(今回は1でいい)
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return animals.count
-        
     }
+    
+    //行数を指定するメソッド
     
     //indexPath の位置に挿入する UITableViewCell を返す
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
