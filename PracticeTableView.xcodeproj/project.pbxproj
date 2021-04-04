@@ -75,8 +75,8 @@
 		E3B6E4AE26039C4500DF87BA /* CONTROLLER */ = {
 			isa = PBXGroup;
 			children = (
-				E3B6E4962600FB7D00DF87BA /* ViewController.swift */,
 				E3B6E4AB26039C3C00DF87BA /* AnimalTableViewCell.swift */,
+				E3B6E4962600FB7D00DF87BA /* ViewController.swift */,
 			);
 			path = CONTROLLER;
 			sourceTree = "<group>";
