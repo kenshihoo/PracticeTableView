@@ -20,10 +20,13 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         tableView1.delegate = self
         
         loadData()
+        tableView1.reloadData()
     }
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
     
-    //セクション内の行数を返す(今回は1でいい)
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return animals.count
     }
@@ -40,16 +43,13 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
                     fatalError("Dequeue failed: AnimalTableViewCell.")
                 }
         
-            cell.animalNameJPLabel.text = animals[indexPath.row].nameJP
-            cell.animalNameENLabel.text = animals[indexPath.row].nameEN
-            cell.animalImageView.image = UIImage(named: animals[indexPath.row].imageName)
-                
-            return cell
+//            cell.animalNameJPLabel.text = animals[indexPath.row].nameJP
+//            cell.animalNameENLabel.text = animals[indexPath.row].nameEN
+//            cell.animalImageView.image = UIImage(named: animals[indexPath.row].imageName)
+            
+        cell.apply(animal: animals[indexPath.row])
+        return cell
     }
-    
-    
-    
-    
 
     func loadData() {
        animals.append(Animal(nameJP: "ふくろう", nameEN: "Owl", imageName: "owl"))
