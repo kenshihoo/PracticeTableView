@@ -92,7 +92,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="tableView1" destination="UeE-dE-IS8" id="xXK-BA-IIZ"/>
+                        <outlet property="tableView1" destination="UeE-dE-IS8" id="htx-0P-c9w"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

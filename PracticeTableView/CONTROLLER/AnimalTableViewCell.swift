@@ -18,6 +18,7 @@ class AnimalTableViewCell: UITableViewCell {
         didSet {
             self.animalNameJPLabel.text = self.animal?.nameJP
             self.animalNameENLabel.text = self.animal?.nameEN
+            self.animalImageView.image = UIImage(named: self.animal!.imageName)
         }
     }
     
