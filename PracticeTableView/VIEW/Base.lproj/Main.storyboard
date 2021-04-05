@@ -55,7 +55,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Owl" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ME2-dr-wuY">
-                                                    <rect key="frame" x="72" y="60" width="30" height="21"/>
+                                                    <rect key="frame" x="72" y="60" width="128" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -72,9 +72,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="animalImageView" destination="fu0-b8-XmP" id="4fB-e4-gwb"/>
                                             <outlet property="animalNameENLabel" destination="ME2-dr-wuY" id="xpP-Tc-kvp"/>
-                                            <outlet property="animallImageView" destination="fu0-b8-XmP" id="je4-4Q-cQo"/>
-                                            <outlet property="anumalNameJPLabel" destination="c3T-5X-WDn" id="1Od-1D-aX6"/>
+                                            <outlet property="animalNameJPLabel" destination="c3T-5X-WDn" id="Eoo-RN-edB"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -97,7 +97,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-403" y="104"/>
+            <point key="canvasLocation" x="-404.34782608695656" y="103.79464285714285"/>
         </scene>
     </scenes>
     <resources>
